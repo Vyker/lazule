@@ -70,21 +70,12 @@
 <!-- ========================================== -->
 <header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
   <div class="h-20 w-full bg-surface/90 backdrop-blur-xl px-margin flex items-center justify-between border-b border-surface-container-highest/60">
-    <div class="flex items-center gap-space-md flex-1">
+    <div class="flex items-center gap-space-md">
       <button aria-label="Open menu" class="flex items-center gap-2 text-primary hover:text-secondary transition-colors p-1" type="button" id="nav-menu-toggle-btn">
         <span class="material-symbols-outlined text-[24px]">menu</span>
       </button>
     </div>
-    <div class="flex items-center justify-center flex-shrink-0">
-      <a class="flex items-center justify-center" href="#" aria-label="LAZULE — home">
-        <img src="assets/images/lazule-logo.png" alt="LAZULE Jewellery with a Story" class="h-8 md:h-10 object-contain mix-blend-multiply">
-      </a>
-    </div>
-    <div class="flex items-center justify-end gap-space-md flex-1">
-      <button aria-label="Search" class="text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center gap-1" type="button">
-        <span class="material-symbols-outlined text-[20px]">search</span>
-        <span class="hidden 2xl:inline font-label-caps text-label-caps uppercase">Search</span>
-      </button>
+    <div class="flex items-center gap-space-lg">
       <a aria-label="Wishlist" href="#" class="relative text-on-surface-variant hover:text-primary transition-colors p-1">
         <span class="material-symbols-outlined text-[20px]">favorite</span>
         <span class="absolute -top-1 -right-1 bg-secondary text-on-secondary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
@@ -104,10 +95,10 @@
     <div id="side-nav-backdrop" class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity duration-500 opacity-0"></div>
     <div id="side-nav-panel" class="relative w-full max-w-md h-full bg-surface shadow-2xl flex flex-col justify-between overflow-y-auto transition-transform duration-500 ease-out -translate-x-full border-r border-surface-container-highest">
       <div class="p-space-lg border-b border-surface-container-highest/60 flex items-center justify-between bg-surface">
-        <div class="flex items-center gap-2">
+        <a href="#" class="flex items-center gap-2">
           <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary">Maison Lazule</span>
           <span class="text-secondary text-[10px]">✦</span>
-        </div>
+        </a>
         <button id="side-nav-close-btn" aria-label="Close navigation menu" class="text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center justify-center rounded-full hover:bg-surface-container" type="button">
           <span class="material-symbols-outlined text-[24px]">close</span>
         </button>
@@ -115,6 +106,13 @@
       <div class="px-space-lg py-space-xl flex-1 flex flex-col justify-center space-y-space-md">
         <span class="font-label-caps text-[10px] tracking-[0.35em] text-secondary uppercase block mb-1">Mesopotamian Archive</span>
         <nav class="flex flex-col space-y-4" aria-label="Primary">
+          <button type="button" class="group flex items-center justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">search</span>
+              Search
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Find a Piece</span>
+          </button>
           <a href="#new-in" class="group flex items-baseline justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
             <span class="font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">New In</span>
             <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">The First Inscriptions</span>
@@ -165,6 +163,9 @@
 <section class="relative w-full -mt-20 overflow-hidden bg-surface-container-high" aria-label="Season campaign">
   <div class="relative w-full min-h-[92vh] flex items-end pb-space-xl lg:pb-24 pt-32 px-space-md lg:px-margin">
     <div class="relative w-full h-[65vh] min-h-[500px] lg:h-[80vh] overflow-hidden">
+      <div class="absolute top-3 md:top-5 left-0 right-0 z-10 flex justify-center">
+        <img src="assets/images/lazule-logo.png" alt="LAZULE — Jewellery with a Story" class="h-10 md:h-14 lg:h-16 object-contain mix-blend-multiply">
+      </div>
       <img src="assets/images/hero-campaign.jpg" alt="Sunlit campaign portrait — LAZULE modern heirlooms" class="w-full h-full object-cover object-center transition-transform duration-1000 ease-out scale-100 hover:scale-[1.01]">
     </div>
   </div>
