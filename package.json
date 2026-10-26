@@ -1,0 +1,13 @@
+{
+  "name": "lazule",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LAZULE — Mesopotamian Haute Joaillerie. Static marketing site (GitHub Pages).",
+  "scripts": {
+    "build": "tailwindcss -i input.css -o assets/css/tailwind.css --minify",
+    "watch": "tailwindcss -i input.css -o assets/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

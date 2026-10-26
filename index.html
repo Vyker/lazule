@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAZULE — Mesopotamian Haute Joaillerie | Dubai Design District</title>
+  <meta name="description" content="LAZULE re-imagines 4,500 years of Mesopotamian heritage as contemporary high jewellery — architectural forms cast in certified 18K gold and royal lapis lazuli, created in the Dubai Design District ateliers.">
+  <link rel="canonical" href="https://vyker.github.io/lazule/">
+  <meta name="theme-color" content="#002452">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LAZULE">
+  <meta property="og:title" content="LAZULE — Mesopotamian Haute Joaillerie">
+  <meta property="og:description" content="The world's first written alphabet, cast in 18K gold and royal lapis lazuli. Dubai Design District.">
+  <meta property="og:image" content="https://vyker.github.io/lazule/assets/images/hero-campaign.jpg">
+  <meta property="og:url" content="https://vyker.github.io/lazule/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts (Google-hosted: Bodoni Moda display, DM Sans body, Material Symbols) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+
+  <!-- Compiled Tailwind (rebuild: npm run build) -->
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://vyker.github.io/lazule/#website",
+        "url": "https://vyker.github.io/lazule/",
+        "name": "LAZULE",
+        "publisher": { "@id": "https://vyker.github.io/lazule/#lazule" }
+      },
+      {
+        "@type": "JewelryStore",
+        "@id": "https://vyker.github.io/lazule/#lazule",
+        "name": "LAZULE Maison de Haute Joaillerie",
+        "url": "https://vyker.github.io/lazule/",
+        "description": "Contemporary high jewellery inspired by ancient Mesopotamia — 18K gold and lapis lazuli, Dubai Design District.",
+        "telephone": "+971 4 821 0090",
+        "image": "https://vyker.github.io/lazule/assets/images/hero-campaign.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Building 3, Suite 402, Dubai Design District (d3)",
+          "addressLocality": "Dubai",
+          "addressCountry": "AE"
+        },
+        "makesOffer": [
+          { "@type": "Offer", "name": "Ishtar Stack Ring — 18K Gold & Lapis Lazuli", "priceCurrency": "AED", "price": "2400" },
+          { "@type": "Offer", "name": "Flowing Waters Hoops (Dijla) — Lapis Drops", "priceCurrency": "AED", "price": "1950" },
+          { "@type": "Offer", "name": "Inanna Star Coin Medallion — Gold & Lapis", "priceCurrency": "AED", "price": "3800" },
+          { "@type": "Offer", "name": "Vaulted Blue Pendant (Babylon Arch)", "priceCurrency": "AED", "price": "2650" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- ========================================== -->
+<!-- FIXED HEADER + SIDE NAVIGATION DRAWER      -->
+<!-- ========================================== -->
+<header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-20 w-full bg-surface/90 backdrop-blur-xl px-margin flex items-center justify-between border-b border-surface-container-highest/60">
+    <div class="flex items-center gap-space-md flex-1">
+      <button aria-label="Open menu" class="flex items-center gap-2 text-primary hover:text-secondary transition-colors p-1" type="button" id="nav-menu-toggle-btn">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+    </div>
+    <div class="flex items-center justify-center flex-shrink-0">
+      <a class="flex items-center justify-center" href="#" aria-label="LAZULE — home">
+        <img src="assets/images/lazule-logo.png" alt="LAZULE Jewellery with a Story" class="h-8 md:h-10 object-contain mix-blend-multiply">
+      </a>
+    </div>
+    <div class="flex items-center justify-end gap-space-md flex-1">
+      <button aria-label="Search" class="text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center gap-1" type="button">
+        <span class="material-symbols-outlined text-[20px]">search</span>
+        <span class="hidden 2xl:inline font-label-caps text-label-caps uppercase">Search</span>
+      </button>
+      <a aria-label="Wishlist" href="#" class="relative text-on-surface-variant hover:text-primary transition-colors p-1">
+        <span class="material-symbols-outlined text-[20px]">favorite</span>
+        <span class="absolute -top-1 -right-1 bg-secondary text-on-secondary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+      </a>
+      <button aria-label="Shopping Bag" class="relative text-on-surface-variant hover:text-primary transition-colors p-1" type="button">
+        <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+        <span class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center">2</span>
+      </button>
+      <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center" aria-hidden="true">
+        <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side drawer -->
+  <div id="side-nav-drawer-overlay" class="fixed inset-0 z-50 transition-all duration-500 opacity-0 pointer-events-none" style="visibility: hidden;">
+    <div id="side-nav-backdrop" class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity duration-500 opacity-0"></div>
+    <div id="side-nav-panel" class="relative w-full max-w-md h-full bg-surface shadow-2xl flex flex-col justify-between overflow-y-auto transition-transform duration-500 ease-out -translate-x-full border-r border-surface-container-highest">
+      <div class="p-space-lg border-b border-surface-container-highest/60 flex items-center justify-between bg-surface">
+        <div class="flex items-center gap-2">
+          <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary">Maison Lazule</span>
+          <span class="text-secondary text-[10px]">✦</span>
+        </div>
+        <button id="side-nav-close-btn" aria-label="Close navigation menu" class="text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center justify-center rounded-full hover:bg-surface-container" type="button">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+      <div class="px-space-lg py-space-xl flex-1 flex flex-col justify-center space-y-space-md">
+        <span class="font-label-caps text-[10px] tracking-[0.35em] text-secondary uppercase block mb-1">Mesopotamian Archive</span>
+        <nav class="flex flex-col space-y-4" aria-label="Primary">
+          <a href="#new-in" class="group flex items-baseline justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">New In</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">The First Inscriptions</span>
+          </a>
+          <a href="#collections" class="group flex items-baseline justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">Collections</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Cuneiform &amp; High Jewellery</span>
+          </a>
+          <a href="#icons" class="group flex items-baseline justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">Shop Now</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">All Heirlooms</span>
+          </a>
+          <a href="#heritage" class="group flex items-baseline justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">About Us</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Dubai Ateliers</span>
+          </a>
+          <a href="#heritage" class="group flex items-baseline justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">Heritage</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2600 BCE Relics</span>
+          </a>
+        </nav>
+        <div class="pt-4 flex items-center justify-between text-outline">
+          <span class="font-label-caps text-[9px] tracking-widest uppercase">Solid 18K Gold • Royal Lapis Lazuli</span>
+          <span class="text-secondary text-[11px]">✧</span>
+        </div>
+      </div>
+      <div class="p-space-lg border-t border-surface-container-highest/60 bg-surface-container-low space-y-space-md">
+        <div class="flex flex-wrap items-center gap-space-md font-label-caps text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">
+          <a href="#" class="hover:text-primary transition-colors">FAQ</a>
+          <span class="">✦</span>
+          <a href="#" class="hover:text-primary transition-colors">Shipping &amp; Returns</a>
+          <span class="">✦</span>
+          <a href="#contact" class="hover:text-primary transition-colors">Contact Concierge</a>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-surface-container-highest/40 text-[11px] font-body-sm text-outline">
+          <span class="">Dubai Design District (d3)</span>
+          <span class="font-label-caps text-[10px] text-primary tracking-widest"><a href="tel:+97148210090" class="hover:underline">+971 4 821 0090</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ========================================== -->
+<!-- 1. HERO: CINEMATIC CAMPAIGN BANNER         -->
+<!-- ========================================== -->
+<section class="relative w-full -mt-20 overflow-hidden bg-surface-container-high" aria-label="Season campaign">
+  <div class="relative w-full min-h-[92vh] flex items-end pb-space-xl lg:pb-24 pt-32 px-space-md lg:px-margin">
+    <div class="relative w-full h-[65vh] min-h-[500px] lg:h-[80vh] overflow-hidden">
+      <img src="assets/images/hero-campaign.jpg" alt="Sunlit campaign portrait — LAZULE modern heirlooms" class="w-full h-full object-cover object-center transition-transform duration-1000 ease-out scale-100 hover:scale-[1.01]">
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 2. "NEW IN" CURATED VITRINE ROW            -->
+<!-- ========================================== -->
+<section id="new-in" class="w-full py-space-xl px-space-md lg:px-margin bg-surface">
+  <!-- Header Block with High-End Editorial Spacing -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-md">
+    <div>
+      <span class="font-label-caps text-label-caps tracking-[0.3em] text-secondary uppercase block mb-1">New Arrivals</span>
+      <h1 class="font-headline-xl text-headline-xl text-primary uppercase">The First Inscriptions</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant mt-1">Sculptural silhouettes rooted in Sumerian, Babylonian, and Akkadian relics.</p>
+    </div>
+    <a class="inline-flex items-center gap-2 font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase hover:text-secondary transition-colors group" href="#icons">
+      <span class="">View All Creations</span>
+      <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+    </a>
+  </div>
+  <!-- 4-Card Horizontal Vitrine Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+    <!-- Product Card 1: Ki Pendant -->
+    <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
+      <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Ki Pendant — 18K Gold and Natural Lapis Lazuli" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/ki-pendant.jpg">
+        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+          <span class="material-symbols-outlined text-[18px]">favorite</span>
+        </button>
+        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+          Quick Add to Bag
+        </div>
+      </div>
+      <div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-lowest">
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">01. KI PENDANT</span>
+            <span class="font-label-caps text-[10px] text-outline uppercase">Solid 18K</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-2">Hand-carved royal lapis slab paired with the Sumerian glyph for Mother Earth.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Product Card 2: Ishtar Stack -->
+    <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
+      <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Ishtar Ring Stack Quad — 18K Gold" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/ishtar-ring-stack.jpg">
+        <div class="absolute top-3 left-3 bg-secondary text-surface px-2 py-0.5 font-label-caps text-[9px] tracking-widest uppercase">
+          Iconic
+        </div>
+        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+          <span class="material-symbols-outlined text-[18px]">favorite</span>
+        </button>
+        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+          Quick Add to Bag
+        </div>
+      </div>
+      <div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-lowest">
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">02. ISHTAR STACK</span>
+            <span class="font-label-caps text-[10px] text-outline uppercase">Set of 4</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-2">Quad-stack featuring ancient cuneiform bands, baguette lapis, and micro pave.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Product Card 3: Naru Bangle -->
+    <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
+      <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Naru Cuneiform Adjustable Gold Bangle" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/naru-bangle.jpg">
+        <div class="absolute top-3 left-3 bg-primary-container text-surface px-2 py-0.5 font-label-caps text-[9px] tracking-widest uppercase">
+          Bestseller
+        </div>
+        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+          <span class="material-symbols-outlined text-[18px]">favorite</span>
+        </button>
+        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+          Quick Add to Bag
+        </div>
+      </div>
+      <div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-lowest">
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">03. NARU BANGLE</span>
+            <span class="font-label-caps text-[10px] text-outline uppercase">Adjustable</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-2">Adjustable slide bolo bracelet embossed with ancient Akkadian inscriptions of courage.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Product Card 4: Samara Arch Earrings -->
+    <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
+      <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Samara Arch Lapis Lazuli Drop Earrings" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/samara-arch.jpg">
+        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+          <span class="material-symbols-outlined text-[18px]">favorite</span>
+        </button>
+        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+          Quick Add to Bag
+        </div>
+      </div>
+      <div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-lowest">
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">04. SAMARA ARCH EARRINGS</span>
+            <span class="font-label-caps text-[10px] text-outline uppercase">Pair</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-2">Stepped arch silhouettes holding five graduated cabochons of deep lazurite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 3. EDITORIAL CATEGORY MOSAIC               -->
+<!-- ========================================== -->
+<section id="collections" class="w-full bg-surface-container-low py-space-xl px-space-md lg:px-margin">
+  <div class="max-w-7xl mx-auto flex flex-col space-y-space-xl">
+    <!-- Split A: Cuneiform Story & Focus -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+      <!-- Editorial Left (7 cols) -->
+      <div class="lg:col-span-7 relative overflow-hidden aspect-[4/3] lg:aspect-[16/10] bg-surface-container">
+        <img alt="The Cuneiform Collection by LAZULE" class="w-full h-full object-cover" src="assets/images/naru-bangle.jpg">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/75 via-transparent to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-surface">
+          <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary-fixed mb-1 block">Chapter I</span>
+          <h2 class="font-headline-xl text-headline-xl uppercase text-surface mb-2">The Cuneiform Collection</h2>
+          <p class="font-body-md text-body-md text-surface/90 max-w-md mb-4">
+            Inscribed with eternal meaning. Wear the world's very first written alphabet transformed into fluid golden curves and tactile geometric cuffs.
+          </p>
+          <a class="inline-flex items-center gap-2 bg-surface text-primary px-6 py-3 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-secondary-fixed transition-colors" href="#icons">
+            <span class="">Shop Bangles &amp; Bands</span>
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <!-- Focus Right (5 cols): 2 Staggered Architectural Product Modules -->
+      <div class="lg:col-span-5 flex flex-col gap-space-md">
+        <div class="p-space-md bg-surface-container-lowest flex items-center gap-space-md">
+          <div class="w-28 h-28 flex-shrink-0 bg-surface-container-low overflow-hidden">
+            <img alt="Naru Band detail" class="w-full h-full object-cover" src="assets/images/ishtar-ring-stack.jpg">
+          </div>
+          <div class="flex-1 min-w-0">
+            <span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">Signature Band</span>
+            <h3 class="font-headline-sm text-headline-sm text-primary uppercase truncate">Naru Cuneiform Ring</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Carved with "Strength &amp; Wisdom" in Babylonian glyphs.</p>
+          </div>
+        </div>
+        <div class="p-space-md bg-surface-container-lowest flex items-center gap-space-md">
+          <div class="w-28 h-28 flex-shrink-0 bg-surface-container-low overflow-hidden">
+            <img alt="Layering Necklace detail" class="w-full h-full object-cover" src="assets/images/ki-pendant.jpg">
+          </div>
+          <div class="flex-1 min-w-0">
+            <span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">Layering Suite</span>
+            <h3 class="font-headline-sm text-headline-sm text-primary uppercase truncate">Triple Dijla Strands</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">18K cascading chains punctuated by lapis beads.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Split B: Editorial Heritage Panorama (Royal Legacy of Ur) -->
+    <div id="heritage" class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center scroll-mt-24">
+      <!-- Left: Heritage imagery -->
+      <div class="lg:col-span-5 order-2 lg:order-1 relative">
+        <div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+          <img alt="Zira Mesopotamia Collection Overview" class="w-full h-full object-cover" src="assets/images/zira-medallion.jpg">
+        </div>
+        <div class="absolute -bottom-4 -right-4 bg-surface p-4 max-w-[200px] shadow-sm hidden md:block">
+          <span class="font-label-caps text-[9px] tracking-widest text-secondary uppercase block">Provenance</span>
+          <span class="font-body-sm text-body-sm text-primary font-medium">Tigris &amp; Euphrates Basin</span>
+        </div>
+      </div>
+      <!-- Right: Poetic Narrative Stack -->
+      <div class="lg:col-span-7 order-1 lg:order-2 flex flex-col justify-center space-y-space-md lg:pl-space-lg">
+        <div class="flex items-center gap-2">
+          <span class="w-8 h-[1px] bg-secondary"></span>
+          <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary">The Royal Legacy of Ur</span>
+        </div>
+        <h2 class="font-headline-xl text-headline-xl text-primary uppercase leading-tight">
+          Before Rome, Before Athens,<br>
+          <span class="italic font-light text-secondary">There Was the Golden Cradle.</span>
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant font-light">
+          In 2600 BCE, Queen Puabi of Ur was laid to rest wearing extravagant headdresses composed of thousands of golden leaves and rare lapis lazuli beads. Today, LAZULE resurrects this supreme architectural discipline in our Dubai ateliers.
+        </p>
+        <div class="grid grid-cols-3 gap-space-md pt-space-sm border-t border-surface-container-highest">
+          <div>
+            <div class="font-headline-sm text-headline-sm text-primary uppercase">4,500</div>
+            <div class="font-body-sm text-body-sm text-on-surface-variant">Years of Heritage</div>
+          </div>
+          <div>
+            <div class="font-headline-sm text-headline-sm text-primary uppercase">100%</div>
+            <div class="font-body-sm text-body-sm text-on-surface-variant">Conflict-Free Lapis</div>
+          </div>
+          <div>
+            <div class="font-headline-sm text-headline-sm text-primary uppercase">18K</div>
+            <div class="font-body-sm text-body-sm text-on-surface-variant">Certified Solid Gold</div>
+          </div>
+        </div>
+        <div>
+          <a class="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-3.5 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary-container transition-colors" href="#press">
+            <span class="">Read the Provenance Chronicle</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 4. STORY & HERITAGE CRAFTSMANSHIP CHAPTER  -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container-high py-space-xl px-space-md lg:px-margin border-y border-surface-container-highest/60">
+  <div class="max-w-4xl mx-auto py-space-lg text-center flex flex-col items-center justify-center space-y-space-md">
+    <div class="flex items-center justify-center gap-space-sm">
+      <span class="w-12 h-[1px] bg-secondary"></span>
+      <span class="text-secondary text-[14px]">✦</span>
+      <span class="w-12 h-[1px] bg-secondary"></span>
+    </div>
+    <span class="font-label-caps text-label-caps tracking-[0.35em] text-secondary uppercase block">Cuneiform Inscriptions • 2600 BCE</span>
+    <blockquote class="font-headline-xl text-headline-xl text-primary font-normal tracking-wide leading-relaxed italic max-w-3xl">
+      "In the land between two rivers, lapis lazuli was deemed the tear of heaven, and solid gold the eternal breath of the sun."
+    </blockquote>
+    <p class="font-label-caps text-label-caps tracking-[0.25em] text-on-surface-variant uppercase">— Adapted from the Hymns of Inanna &amp; Royal Inscriptions of Ur</p>
+    <div class="flex items-center justify-center gap-space-sm pt-2">
+      <span class="w-8 h-[1px] bg-secondary/50"></span>
+      <span class="text-secondary text-[11px]">✧</span>
+      <span class="w-8 h-[1px] bg-secondary/50"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 5. "ICONIC PIECES & BESTSELLERS" GRID      -->
+<!-- ========================================== -->
+<section id="icons" class="w-full py-space-xl px-space-md lg:px-margin bg-surface scroll-mt-24">
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-md">
+    <div>
+      <span class="font-label-caps text-label-caps tracking-[0.3em] text-secondary uppercase block mb-1">Permanent Archive</span>
+      <h2 class="font-headline-xl text-headline-xl text-primary uppercase">The Enduring Icons</h2>
+    </div>
+    <!-- Category Filters (visual only — wire to a real catalog later) -->
+    <div class="flex flex-wrap items-center gap-space-xs font-label-caps text-[10px] tracking-[0.2em] uppercase">
+      <button class="px-3 py-1.5 bg-primary text-on-primary font-semibold" type="button">All Categories</button>
+      <button class="px-3 py-1.5 bg-surface-container text-on-surface-variant hover:text-primary transition-colors" type="button">Signets &amp; Rings</button>
+      <button class="px-3 py-1.5 bg-surface-container text-on-surface-variant hover:text-primary transition-colors" type="button">Necklaces</button>
+      <button class="px-3 py-1.5 bg-surface-container text-on-surface-variant hover:text-primary transition-colors" type="button">Earrings</button>
+    </div>
+  </div>
+  <!-- 4-Column Luxury Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+    <!-- Item 1: Ishtar Stack Ring -->
+    <div class="group bg-surface-container-lowest flex flex-col">
+      <div class="relative aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Ishtar Stacking Ring Quad in 18K Gold and Lapis Lazuli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="assets/images/ishtar-stack-ring.jpg">
+        <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
+          <span class="material-symbols-outlined text-[20px]">favorite</span>
+        </button>
+      </div>
+      <div class="p-space-md flex flex-col justify-between flex-1">
+        <div>
+          <span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase block mb-1">Ishtar</span>
+          <h3 class="font-headline-sm text-headline-sm text-primary uppercase">Ishtar stack ring</h3>
+        </div>
+        <div class="mt-4 pt-2 flex items-center justify-between">
+          <span class="font-label-price text-label-price text-primary">AED 2,400</span>
+          <a class="font-label-caps text-label-caps tracking-widest text-secondary hover:text-primary uppercase" href="#">Discover ✦</a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 2: Dijla Hoops -->
+    <div class="group bg-surface-container-lowest flex flex-col">
+      <div class="relative aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Dijla River Flow Hoops with Lapis Drops" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="assets/images/ki-pendant.jpg" style="object-fit: cover; object-position: 63.8% 36%; transform: scale(3.9); transform-origin: 63.8% 36%;">
+        <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
+          <span class="material-symbols-outlined text-[20px]">favorite</span>
+        </button>
+      </div>
+      <div class="p-space-md flex flex-col justify-between flex-1">
+        <div>
+          <span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase block mb-1">Dijla Hoops</span>
+          <h3 class="font-headline-sm text-headline-sm text-primary uppercase">Flowing Waters Hoops</h3>
+        </div>
+        <div class="mt-4 pt-2 flex items-center justify-between">
+          <span class="font-label-price text-label-price text-primary">AED 1,950</span>
+          <a class="font-label-caps text-label-caps tracking-widest text-secondary hover:text-primary uppercase" href="#">Discover ✦</a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 3: Star Medallion Pendant -->
+    <div class="group bg-surface-container-lowest flex flex-col">
+      <div class="relative aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Ur Palm and Star Medallion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="assets/images/zira-medallion.jpg">
+        <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
+          <span class="material-symbols-outlined text-[20px]">favorite</span>
+        </button>
+      </div>
+      <div class="p-space-md flex flex-col justify-between flex-1">
+        <div>
+          <span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase block mb-1">Star Medallion</span>
+          <h3 class="font-headline-sm text-headline-sm text-primary uppercase">Inanna Star Coin</h3>
+        </div>
+        <div class="mt-4 pt-2 flex items-center justify-between">
+          <span class="font-label-price text-label-price text-primary">AED 3,800</span>
+          <a class="font-label-caps text-label-caps tracking-widest text-secondary hover:text-primary uppercase" href="#">Discover ✦</a>
+        </div>
+      </div>
+    </div>
+    <!-- Item 4: Babylon Arch Lapis Pendant -->
+    <div class="group bg-surface-container-lowest flex flex-col">
+      <div class="relative aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
+        <img alt="Babylon Arch Blue Lapis Pendant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="assets/images/zira-medallion.jpg">
+        <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
+          <span class="material-symbols-outlined text-[20px]">favorite</span>
+        </button>
+      </div>
+      <div class="p-space-md flex flex-col justify-between flex-1">
+        <div>
+          <span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase block mb-1">Babylon Arch</span>
+          <h3 class="font-headline-sm text-headline-sm text-primary uppercase">Vaulted Blue Pendant</h3>
+        </div>
+        <div class="mt-4 pt-2 flex items-center justify-between">
+          <span class="font-label-price text-label-price text-primary">AED 2,650</span>
+          <a class="font-label-caps text-label-caps tracking-widest text-secondary hover:text-primary uppercase" href="#">Discover ✦</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 6. EDITORIAL PRESS & REGIONAL PRAISE       -->
+<!-- ========================================== -->
+<section id="press" class="w-full bg-surface-container-low py-space-xl px-space-md lg:px-margin scroll-mt-24">
+  <div class="max-w-5xl mx-auto flex flex-col space-y-space-lg text-center">
+    <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary">Editorial Acclaim</span>
+    <!-- Main Featured Quote -->
+    <blockquote class="font-headline-xl text-headline-xl text-primary font-normal tracking-wide max-w-3xl mx-auto leading-relaxed">
+      "LAZULE has executed what few fine jewelers dare: marrying the sacred weight of ancient Mesopotamian history with the sharp, effortless minimalism of the modern Middle Eastern woman."
+    </blockquote>
+    <div class="flex items-center justify-center gap-2">
+      <span class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase font-bold">VOGUE ARABIA</span>
+      <span class="text-secondary text-[10px]">✦</span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant">Autumn High Jewellery Issue</span>
+    </div>
+    <!-- Press Mentions Bar -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-lg border-t border-surface-container-highest">
+      <div class="flex flex-col items-center justify-center p-space-sm">
+        <span class="font-headline-sm text-headline-sm tracking-[0.2em] text-primary uppercase">Harper's Bazaar</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant mt-1">"The New Heirlooms to Collect Now"</span>
+      </div>
+      <div class="flex flex-col items-center justify-center p-space-sm">
+        <span class="font-headline-sm text-headline-sm tracking-[0.2em] text-primary uppercase">GQ Middle East</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant mt-1">"Reimagining Royal Sumerian Gold"</span>
+      </div>
+      <div class="flex flex-col items-center justify-center p-space-sm">
+        <span class="font-headline-sm text-headline-sm tracking-[0.2em] text-primary uppercase">L'Officiel Arabia</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant mt-1">"Jewellery as Living Architectural Art"</span>
+      </div>
+      <div class="flex flex-col items-center justify-center p-space-sm">
+        <span class="font-headline-sm text-headline-sm tracking-[0.2em] text-primary uppercase">Emirates Woman</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant mt-1">"Dubai Design District's Finest Atelier"</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========================================== -->
+<!-- FOOTER: HERITAGE GAZETTE + MAISON          -->
+<!-- ========================================== -->
+<footer id="contact" class="w-full bg-surface-container-low text-on-surface border-t border-surface-container-highest scroll-mt-24">
+  <div class="w-full px-margin py-space-xl">
+    <!-- Newsletter -->
+    <div class="max-w-4xl mx-auto text-center mb-space-xl">
+      <span class="font-label-caps text-label-caps tracking-[0.3em] text-secondary uppercase block mb-space-xs">Heritage Gazette</span>
+      <h2 class="font-headline-md text-headline-md tracking-[0.06em] text-primary mb-space-sm uppercase">Join the Circle of Heirlooms</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-space-lg">Be the first to access limited lapis lazuli extractions and archival cuneiform releases in Dubai Design District.</p>
+      <form id="newsletter-form" class="flex flex-col sm:flex-row items-center justify-center gap-space-sm max-w-md mx-auto" novalidate>
+        <input class="w-full bg-surface-container-lowest border border-outline-variant px-space-md py-3 text-on-surface placeholder:text-outline font-label-caps text-label-caps tracking-widest focus:outline-none focus:border-primary" placeholder="ENTER YOUR EMAIL ADDRESS" type="email" aria-label="Email address" required>
+        <button class="w-full sm:w-auto bg-primary text-on-primary px-space-lg py-3 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary-container transition-colors whitespace-nowrap" type="submit">Subscribe</button>
+      </form>
+      <p id="newsletter-thanks" class="mt-2 font-label-caps text-label-caps tracking-[0.25em] uppercase text-secondary hidden" aria-live="polite">Thank you — you are on the list ✦</p>
+    </div>
+
+    <!-- Maison columns -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pt-space-lg border-t border-surface-container-highest">
+      <div class="lg:col-span-1">
+        <div class="mb-space-sm">
+          <img src="assets/images/lazule-logo.png" alt="LAZULE — Jewellery with a Story" class="h-8 object-contain mix-blend-multiply">
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Ancient Mesopotamian majesty re-imagined for contemporary high jewellery. Architectural forms cast in responsible ethical gold and rare lapis lazuli.</p>
+        <div class="flex items-center gap-space-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-[18px]">location_on</span>
+          <span class="font-body-sm text-body-sm">Building 3, Dubai Design District (d3), UAE</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">Client Concierge</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="#">Express GCC Delivery</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Complimentary Returns</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Authenticity &amp; Provenance</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Ring Sizing Guide</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Lapis &amp; Gold Care Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">The Maison</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="#heritage">Mesopotamian Provenance</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#heritage">Architectural Craftsmanship</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Ethical Gold &amp; Lapis Mining</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#press">Editorial &amp; Press Features</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Royal Inscription Archive</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">High Collections</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="#icons">Ishtar Gate Series</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#collections">Cuneiform Inscriptions</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#icons">Tigris &amp; Euphrates Fluid Line</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#icons">Utu Solar Medallions</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#icons">Royal Bridal Heirlooms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">Regional Boutique</h3>
+        <div class="bg-surface-container p-space-md space-y-space-xs mb-space-md">
+          <div class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">Private Client Suite</div>
+          <p class="font-body-sm text-body-sm text-on-surface">Dubai Design District (d3), Building 3, Suite 402<br>Dubai, United Arab Emirates</p>
+          <p class="font-label-price text-label-price text-primary"><a href="tel:+97148210090" class="hover:underline">+971 4 821 0090</a></p>
+        </div>
+        <div class="flex items-center gap-space-xs text-outline">
+          <span class="font-label-caps text-[10px] tracking-widest uppercase">Languages:</span>
+          <span class="font-label-caps text-[10px] text-primary tracking-widest">EN | العربية</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legal + payments -->
+    <div class="pt-space-lg mt-space-lg border-t border-surface-container-highest flex flex-col md:flex-row items-center justify-between gap-space-md">
+      <div class="flex flex-wrap items-center gap-space-md font-label-caps text-[10px] tracking-[0.2em] text-outline uppercase">
+        <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">Terms of Sale</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">Certificate of Authenticity</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns Policy</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">FAQ</a>
+      </div>
+      <div class="flex items-center gap-space-sm">
+        <span class="font-label-caps text-[10px] tracking-widest text-outline uppercase mr-2">Payment Methods:</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">APPLE PAY</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">VISA</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">MASTERCARD</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">MADA</span>
+      </div>
+    </div>
+    <div class="text-center pt-space-md font-label-caps text-[10px] tracking-[0.25em] text-outline uppercase">© <span id="year">2026</span> LAZULE MAISON DE HAUTE JOAILLERIE. CRAFTED FOR MODERN HEIRLOOMS IN DUBAI, UAE. ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
