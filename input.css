@@ -28,6 +28,50 @@
   }
 }
 
+/* ------------------------------------------------------------------
+   Dynamic-viewport safety (Android Chrome renders 100vh taller than the
+   visible screen, hiding the browser toolbar area).
+   Fallback = classic vh; browsers that know dvh (Chrome 108+) get
+   the screen-stable sizes via @supports.
+   ------------------------------------------------------------------ */
+.lazule-drawer-h {
+  height: 100%;
+}
+
+.lazule-hero {
+  min-height: 92vh;
+}
+
+.lazule-hero-img {
+  height: 65vh;
+}
+
+@media (min-width: 1024px) {
+  .lazule-hero-img {
+    height: 80vh;
+  }
+}
+
+@supports (height: 100dvh) {
+  .lazule-drawer-h {
+    height: 100dvh;
+  }
+
+  .lazule-hero {
+    min-height: 92dvh;
+  }
+
+  .lazule-hero-img {
+    height: 65dvh;
+  }
+
+  @media (min-width: 1024px) {
+    .lazule-hero-img {
+      height: 80dvh;
+    }
+  }
+}
+
 /* Material Symbols — force outline weight to match the AI Studio render */
 .material-symbols-outlined {
   font-variation-settings:
