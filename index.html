@@ -69,24 +69,19 @@
 <!-- FIXED HEADER + SIDE NAVIGATION DRAWER      -->
 <!-- ========================================== -->
 <header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-  <div class="h-20 w-full bg-surface/90 backdrop-blur-xl px-margin flex items-center justify-between border-b border-surface-container-highest/60">
-    <div class="flex items-center gap-space-md">
+  <div class="h-24 w-full bg-surface/90 backdrop-blur-xl px-margin flex items-center border-b border-surface-container-highest/60">
+    <div class="flex items-center gap-space-md flex-1">
       <button aria-label="Open menu" class="flex items-center gap-2 text-primary hover:text-secondary transition-colors p-1" type="button" id="nav-menu-toggle-btn">
-        <span class="material-symbols-outlined text-[24px]">menu</span>
+        <span class="material-symbols-outlined text-[26px]">menu</span>
       </button>
     </div>
-    <div class="flex items-center gap-space-lg">
-      <a aria-label="Wishlist" href="#" class="relative text-on-surface-variant hover:text-primary transition-colors p-1">
-        <span class="material-symbols-outlined text-[20px]">favorite</span>
-        <span class="absolute -top-1 -right-1 bg-secondary text-on-secondary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+    <div class="flex items-center justify-center flex-shrink-0">
+      <a class="flex items-center justify-center" href="#" aria-label="LAZULE — home">
+        <img src="assets/images/lazule-logo.png" alt="LAZULE — Jewellery with a Story" class="h-12 md:h-14 lg:h-16 object-contain mix-blend-multiply">
       </a>
-      <button aria-label="Shopping Bag" class="relative text-on-surface-variant hover:text-primary transition-colors p-1" type="button">
-        <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
-        <span class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center">2</span>
-      </button>
-      <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center" aria-hidden="true">
-        <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
-      </div>
+    </div>
+    <div class="flex items-center flex-1" aria-hidden="true">
+      <span class="w-[38px]"></span>
     </div>
   </div>
 
@@ -134,6 +129,29 @@
             <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2600 BCE Relics</span>
           </a>
         </nav>
+        <div class="pt-2 flex flex-col gap-space-xs">
+          <button type="button" class="group flex items-center justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">favorite</span>
+              Wishlist
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">0 Saved</span>
+          </button>
+          <button type="button" class="group flex items-center justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">shopping_bag</span>
+              Shopping Bag
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2 Items</span>
+          </button>
+          <button type="button" class="group flex items-center justify-between py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">person</span>
+              My Account
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Sign In</span>
+          </button>
+        </div>
         <div class="pt-4 flex items-center justify-between text-outline">
           <span class="font-label-caps text-[9px] tracking-widest uppercase">Solid 18K Gold • Royal Lapis Lazuli</span>
           <span class="text-secondary text-[11px]">✧</span>
@@ -160,12 +178,9 @@
 <!-- ========================================== -->
 <!-- 1. HERO: CINEMATIC CAMPAIGN BANNER         -->
 <!-- ========================================== -->
-<section class="relative w-full -mt-20 overflow-hidden bg-surface-container-high" aria-label="Season campaign">
+<section class="relative w-full -mt-24 overflow-hidden bg-surface-container-high" aria-label="Season campaign">
   <div class="relative w-full min-h-[92vh] flex items-end pb-space-xl lg:pb-24 pt-32 px-space-md lg:px-margin">
     <div class="relative w-full h-[65vh] min-h-[500px] lg:h-[80vh] overflow-hidden">
-      <div class="absolute top-3 md:top-5 left-0 right-0 z-10 flex justify-center">
-        <img src="assets/images/lazule-logo.png" alt="LAZULE — Jewellery with a Story" class="h-10 md:h-14 lg:h-16 object-contain mix-blend-multiply">
-      </div>
       <img src="assets/images/hero-campaign.jpg" alt="Sunlit campaign portrait — LAZULE modern heirlooms" class="w-full h-full object-cover object-center transition-transform duration-1000 ease-out scale-100 hover:scale-[1.01]">
     </div>
   </div>
