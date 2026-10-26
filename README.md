@@ -7,21 +7,29 @@ Live: <https://vyker.github.io/lazule/> (GitHub Pages)
 ## Project structure
 
 ```
-index.html            The single homepage — all content lives here
+index.html              Home page
+new-in/index.html       "The First Inscriptions" — new pieces + unveiling ritual
+collections/index.html  "The Four Chapters" — themed collections
+shop/index.html         "All Heirlooms" — full product archive
+search/index.html       "Find a Piece" — live archive search (client-side filter)
+about/index.html        "The Maison" — story, atelier, press
+heritage/index.html     "Our Inheritance" — timeline and craftsmanship
+404.html                Custom not-found page
 assets/css/tailwind.css   Compiled stylesheet (built, do not hand-edit)
 assets/js/main.js     Nav drawer, quick-add, newsletter placeholder, year stamp
-assets/images/        Self-hosted imagery (downloaded from the AI Studio CDN)
+assets/images/        Self-hosted imagery (campaign + lookbook sources)
+assets/images/products/  Clean single-product tiles extracted for the cards
 favicon.svg           Brand favicon (lapis navy + serif L)
 tailwind.config.js    Design tokens (palette, type scale, spacing) — the "design system"
-input.css             Tailwind entry (base layer)
+input.css             Tailwind entry (base layer + mobile helpers)
 package.json          npm scripts for the Tailwind build
 ```
 
 ## Editing content
 
-- **Text, order, sections:** edit `index.html` directly — each section is fenced with a big numbered comment banner (`1. HERO`, `2. NEW IN`, …).
+- **Text, order, sections:** edit the page's `index.html` directly — each section is fenced with a big numbered comment banner (`1. HERO`, `2. NEW IN`, …).
 - **Palette / fonts / spacing:** edit `tailwind.config.js`, then rebuild (below). Tokens follow the AI Studio `DESIGN.md` naming (Bodoni Moda display, DM Sans body, `#002452` primary navy, `#795902` antique gold).
-- **Images:** drop files into `assets/images/` and update the `src` in `index.html`.
+- **Images:** drop files into `assets/images/` (clean product tiles in `assets/images/products/`) and update the `src` in the page's `index.html`.
 - **Placeholder links** (product "Discover ✦", footer concierge/legal links, bag/wishlist icons, category filter buttons) currently point to `#` — replace when those pages/services exist.
 - **Email capture** is front-end only: it validates and shows a thank-you, but does not store anything. Wire `form`/`newsletter-form` in `index.html` to a real provider later.
 

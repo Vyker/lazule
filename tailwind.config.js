@@ -5,7 +5,7 @@
  */
 module.exports = {
   darkMode: "class",
-  content: ["./index.html", "./assets/js/**/*.js"],
+  content: ["./*.html", "./**/*.html", "./assets/js/**/*.js"],
   theme: {
     extend: {
       colors: {
