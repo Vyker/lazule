@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wishlist | LAZULE</title>
+  <meta name="description" content="Your private LAZULE wishlist — keep the pieces you love, numbered and waiting for the boutique.">
+  <link rel="canonical" href="https://vyker.github.io/lazule/wishlist/index.html">
+  <meta name="theme-color" content="#002452">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LAZULE">
+  <meta property="og:title" content="My Wishlist | LAZULE">
+  <meta property="og:description" content="Your private LAZULE wishlist — keep the pieces you love, numbered and waiting for the boutique.">
+  <meta property="og:image" content="https://vyker.github.io/lazule/assets/images/hero-campaign.jpg">
+  <meta property="og:url" content="https://vyker.github.io/lazule/wishlist/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/tailwind.css?v=20261026b">
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-24 w-full bg-surface px-margin flex items-center border-b border-surface-container-highest/60">
+    <div class="flex items-center gap-space-md flex-1">
+      <button aria-label="Open menu" class="flex items-center gap-2 text-primary hover:text-secondary transition-colors p-1" type="button" id="nav-menu-toggle-btn">
+        <span class="material-symbols-outlined text-[26px]">menu</span>
+      </button>
+    </div>
+    <div class="flex items-center justify-center flex-shrink-0">
+      <a class="flex items-center justify-center" href="../" aria-label="LAZULE — home">
+        <img src="../assets/images/lazule-logo.png" alt="LAZULE — Jewellery with a Story" class="h-12 md:h-14 lg:h-16 object-contain mix-blend-multiply">
+      </a>
+    </div>
+    <div class="flex items-center flex-1" aria-hidden="true">
+      <span class="w-[38px]"></span>
+    </div>
+  </div>
+
+  <!-- Side drawer -->
+  <div id="side-nav-drawer-overlay" class="fixed inset-x-0 top-0 lazule-drawer-h z-50 transition-all duration-500 opacity-0 pointer-events-none" style="visibility: hidden;">
+    <div id="side-nav-backdrop" class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity duration-500 opacity-0"></div>
+    <div id="side-nav-panel" class="relative w-full max-w-md h-full bg-surface shadow-2xl flex flex-col justify-between overflow-y-auto transition-transform duration-500 ease-out -translate-x-full border-r border-surface-container-highest">
+      <div class="px-space-lg py-4 sm:p-space-lg border-b border-surface-container-highest/60 flex items-center justify-between bg-surface">
+        <a href="../" class="flex items-center gap-2">
+          <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary">Maison Lazule</span>
+          <span class="text-secondary text-[10px]">✦</span>
+        </a>
+        <button id="side-nav-close-btn" aria-label="Close navigation menu" class="text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center justify-center rounded-full hover:bg-surface-container" type="button">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+      <div class="px-space-lg py-5 sm:py-space-xl flex-1 flex flex-col justify-center space-y-3 sm:space-y-space-md">
+        <span class="font-label-caps text-[10px] tracking-[0.35em] text-secondary uppercase block mb-1">Mesopotamian Archive</span>
+        <nav class="flex flex-col space-y-3 sm:space-y-4" aria-label="Primary">
+          <a href="../search/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">search</span>
+              Search
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Find a Piece</span>
+          </a>
+          <a href="../new-in/" class="group flex items-baseline justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">New In</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">The First Inscriptions</span>
+          </a>
+          <a href="../collections/" class="group flex items-baseline justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">Collections</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Cuneiform &amp; High Jewellery</span>
+          </a>
+          <a href="../shop/" class="group flex items-baseline justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">Shop Now</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">All Heirlooms</span>
+          </a>
+          <a href="../about/" class="group flex items-baseline justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">About Us</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Dubai Ateliers</span>
+          </a>
+          <a href="../heritage/" class="group flex items-baseline justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors">
+            <span class="font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">Heritage</span>
+            <span class="hidden sm:inline font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2600 BCE Relics</span>
+          </a>
+        </nav>
+        <div class="pt-2 flex flex-col gap-space-xs">
+          <a href="../wishlist/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">favorite</span>
+              Wishlist
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">0 Saved</span>
+          </a>
+          <a href="../bag/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">shopping_bag</span>
+              Shopping Bag
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2 Items</span>
+          </a>
+          <a href="../account/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
+            <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
+              <span class="material-symbols-outlined text-[26px]">person</span>
+              My Account
+            </span>
+            <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">Sign In</span>
+          </a>
+        </div>
+        <div class="pt-4 flex items-center justify-between text-outline">
+          <span class="font-label-caps text-[9px] tracking-widest uppercase">Solid 18K Gold • Royal Lapis Lazuli</span>
+          <span class="text-secondary text-[11px]">✧</span>
+        </div>
+      </div>
+      <div class="px-space-lg py-4 sm:p-space-lg border-t border-surface-container-highest/60 bg-surface-container-low space-y-space-md">
+        <div class="flex flex-wrap items-center gap-space-md font-label-caps text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">
+          <a href="../shop/" class="hover:text-primary transition-colors">FAQ</a>
+          <span class="">✦</span>
+          <a href="../shop/" class="hover:text-primary transition-colors">Shipping &amp; Returns</a>
+          <span class="">✦</span>
+          <a href="../#contact" class="hover:text-primary transition-colors">Contact Concierge</a>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-surface-container-highest/40 text-[11px] font-body-sm text-outline">
+          <span class="">Dubai Design District (d3)</span>
+          <span class="font-label-caps text-[10px] text-primary tracking-widest"><a href="tel:+971****0090" class="hover:underline">+971 4 821 0090</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+<section class="w-full pt-32 pb-space-lg px-space-md lg:px-margin bg-surface">
+  <div class="max-w-2xl mx-auto text-center">
+    <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary block mb-2">The Private Vault</span>
+    <h1 class="font-headline-xl text-headline-xl text-primary uppercase">My Wishlist</h1>
+    <p class="font-body-md text-body-md text-on-surface-variant mt-2">The pieces you keep, numbered and waiting — your private shortlist before you say yes.</p>
+    <p class="mt-2 font-label-caps text-[10px] tracking-[0.25em] uppercase text-outline">0 pieces inscribed so far</p>
+  </div>
+  <div class="max-w-xl mx-auto mt-space-lg bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl text-center">
+    <span class="material-symbols-outlined text-[48px] text-secondary">favorite</span>
+    <h2 class="font-headline-md text-headline-md text-primary uppercase mt-space-xs">The vault is waiting</h2>
+    <p class="font-body-md text-body-md text-on-surface-variant mt-2">Save a piece from the archive and it will be kept here — numbered, ready to reserve the moment the boutique opens.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-space-sm mt-space-lg">
+      <a class="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-3.5 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary-container transition-colors" href="../shop/"><span>Browse the Shop</span></a>
+      <a class="inline-flex items-center gap-2 border border-primary text-primary px-8 py-3.5 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary hover:text-on-primary transition-colors" href="../new-in/"><span>Explore New In</span></a>
+    </div>
+  </div>
+</section>
+<section class="w-full pb-space-xl px-space-md lg:px-margin bg-surface">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-space-lg">
+      <span class="font-label-caps text-[10px] tracking-[0.3em] uppercase text-secondary block mb-1">Curated for the discerning</span>
+      <h2 class="font-headline-md text-headline-md text-primary uppercase">Pieces We'd Keep on Your Mind</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+      <div class="bg-surface-container-lowest border border-surface-container-highest/40">
+        <div class="w-full aspect-[4/5] overflow-hidden">
+          <img src="../assets/images/products/ki-pendant-tile.jpg" alt="Ki Pendant — 18K gold and lapis" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="p-space-md flex items-start justify-between gap-2">
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-primary uppercase">Ki Pendant</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">The royal slab, hand-carved.</p>
+          </div>
+          <span class="font-label-price text-label-price text-outline shrink-0">AED 2,400</span>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest border border-surface-container-highest/40">
+        <div class="w-full aspect-[4/5] overflow-hidden">
+          <img src="../assets/images/products/ishtar-stack-tile.jpg" alt="Ishtar stack rings — 18K gold and lapis" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="p-space-md flex items-start justify-between gap-2">
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-primary uppercase">Ishtar Stack</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Four bands, one gate.</p>
+          </div>
+          <span class="font-label-price text-label-price text-outline shrink-0">AED 2,400</span>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest border border-surface-container-highest/40">
+        <div class="w-full aspect-[4/5] overflow-hidden">
+          <img src="../assets/images/samara-arch.jpg" alt="Samara arch lapis earrings" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="p-space-md flex items-start justify-between gap-2">
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-primary uppercase">Arch Drops</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Stepped arches in lapis.</p>
+          </div>
+          <span class="font-label-price text-label-price text-outline shrink-0">AED 2,150</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="contact" class="w-full bg-surface-container-low text-on-surface border-t border-surface-container-highest scroll-mt-24">
+  <div class="w-full px-margin py-space-xl">
+    <div class="max-w-4xl mx-auto text-center mb-space-xl">
+      <span class="font-label-caps text-label-caps tracking-[0.3em] text-secondary uppercase block mb-space-xs">Heritage Gazette</span>
+      <h2 class="font-headline-md text-headline-md tracking-[0.06em] text-primary mb-space-sm uppercase">Join the Circle of Heirlooms</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-space-lg">Be the first to access limited lapis lazuli extractions and archival cuneiform releases in Dubai Design District.</p>
+      <form id="newsletter-form" class="flex flex-col sm:flex-row items-center justify-center gap-space-sm max-w-md mx-auto" novalidate>
+        <input class="w-full bg-surface-container-lowest border border-outline-variant px-space-md py-3 text-on-surface placeholder:text-outline font-label-caps text-label-caps tracking-widest focus:outline-none focus:border-primary" placeholder="ENTER YOUR EMAIL ADDRESS" type="email" aria-label="Email address" required>
+        <button class="w-full sm:w-auto bg-primary text-on-primary px-space-lg py-3 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary-container transition-colors whitespace-nowrap" type="submit">Subscribe</button>
+      </form>
+      <p id="newsletter-thanks" class="mt-2 font-label-caps text-label-caps tracking-[0.25em] uppercase text-secondary hidden" aria-live="polite">Thank you — you are on the list ✦</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pt-space-lg border-t border-surface-container-highest">
+      <div class="lg:col-span-1">
+        <div class="mb-space-sm">
+          <img src="../assets/images/lazule-logo.png" alt="LAZULE — Jewellery with a Story" class="h-8 object-contain mix-blend-multiply">
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Ancient Mesopotamian majesty re-imagined for contemporary high jewellery. Architectural forms cast in responsible ethical gold and rare lapis lazuli.</p>
+        <div class="flex items-center gap-space-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-[18px]">location_on</span>
+          <span class="font-body-sm text-body-sm">Building 3, Dubai Design District (d3), UAE</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">Client Concierge</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="../shop/">Express GCC Delivery</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../shop/">Complimentary Returns</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../shop/">Authenticity &amp; Provenance</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../shop/">Ring Sizing Guide</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../shop/">Lapis &amp; Gold Care Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">The Maison</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="../heritage/">Mesopotamian Provenance</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../about/">Architectural Craftsmanship</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../about/">Ethical Gold &amp; Lapis Mining</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../about/#press">Editorial &amp; Press Features</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../heritage/">Royal Inscription Archive</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">High Collections</h3>
+        <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="../collections/">Ishtar Gate Series</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../collections/">Cuneiform Inscriptions</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../collections/">Tigris &amp; Euphrates Fluid Line</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../collections/">Utu Solar Medallions</a></li>
+          <li><a class="hover:text-primary transition-colors" href="../shop/">Royal Bridal Heirlooms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label-caps text-label-caps tracking-[0.25em] text-primary uppercase mb-space-md">Regional Boutique</h3>
+        <div class="bg-surface-container p-space-md space-y-space-xs mb-space-md">
+          <div class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">Private Client Suite</div>
+          <p class="font-body-sm text-body-sm text-on-surface">Dubai Design District (d3), Building 3, Suite 402<br>Dubai, United Arab Emirates</p>
+          <p class="font-label-price text-label-price text-primary"><a href="tel:+971****0090" class="hover:underline">+971 4 821 0090</a></p>
+        </div>
+        <div class="flex items-center gap-space-xs text-outline">
+          <span class="font-label-caps text-[10px] tracking-widest uppercase">Languages:</span>
+          <span class="font-label-caps text-[10px] text-primary tracking-widest">EN | العربية</span>
+        </div>
+      </div>
+    </div>
+    <div class="pt-space-lg mt-space-lg border-t border-surface-container-highest flex flex-col md:flex-row items-center justify-between gap-space-md">
+      <div class="flex flex-wrap items-center gap-space-md font-label-caps text-[10px] tracking-[0.2em] text-outline uppercase">
+        <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">Terms of Sale</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">Certificate of Authenticity</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns Policy</a>
+        <span class="">✦</span>
+        <a class="hover:text-primary transition-colors" href="#">FAQ</a>
+      </div>
+      <div class="flex items-center gap-space-sm">
+        <span class="font-label-caps text-[10px] tracking-widest text-outline uppercase mr-2">Payment Methods:</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">APPLE PAY</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">VISA</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">MASTERCARD</span>
+        <span class="px-2 py-1 bg-surface-container text-primary font-label-caps text-[10px] font-semibold border border-outline-variant">MADA</span>
+      </div>
+    </div>
+    <div class="text-center pt-space-md font-label-caps text-[10px] tracking-[0.25em] text-outline uppercase">© <span id="year">2026</span> LAZULE MAISON DE HAUTE JOAILLERIE. CRAFTED FOR MODERN HEIRLOOMS IN DUBAI, UAE. ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js?v=20261026b" defer></script>
+</body>
+</html>
