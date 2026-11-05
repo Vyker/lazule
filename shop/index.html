@@ -90,14 +90,14 @@
               Wishlist
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">0 Saved</span>
-          </a>
+           <span data-lazule-wish-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="../bag/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">shopping_bag</span>
               Shopping Bag
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2 Items</span>
-          </a>
+           <span data-lazule-bag-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="../account/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">person</span>
@@ -152,11 +152,14 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Ki Pendant — 18K gold and lapis" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/ki-pendant-tile.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="../product/ki-pendant/" aria-label="Ki Pendant — view the piece">
+<img alt="Ki Pendant — 18K gold and lapis" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/ki-pendant-tile.jpg">
+</a>
+        <button data-wish-heart="ki-pendant" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="ki-pendant" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -172,14 +175,17 @@
     </div>
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Ishtar stack rings — 18K gold and lapis" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/ishtar-stack-tile.jpg">
+        
+<a class="block" href="../product/ishtar-stack-rings/" aria-label="Ishtar Stack Rings — view the piece">
+<img alt="Ishtar stack rings — 18K gold and lapis" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/ishtar-stack-tile.jpg">
+</a>
         <div class="absolute top-3 left-3 bg-secondary text-surface px-2 py-0.5 font-label-caps text-[9px] tracking-widest uppercase">
           Iconic
         </div>
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        <button data-wish-heart="ishtar-stack-rings" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="ishtar-stack-rings" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -195,21 +201,24 @@
     </div>
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Naru bracelet — adjustable 18K gold and lapis" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/naru-bracelet-tile.jpg">
+        
+<a class="block" href="../product/naru-bracelet/" aria-label="Naru Bangle — view the piece">
+<img alt="Naru bracelet — adjustable 18K gold and lapis" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/naru-bracelet-tile.jpg">
+</a>
         <div class="absolute top-3 left-3 bg-primary-container text-surface px-2 py-0.5 font-label-caps text-[9px] tracking-widest uppercase">
           Bestseller
         </div>
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        <button data-wish-heart="naru-bracelet" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="naru-bracelet" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
       <div class="p-space-md flex flex-col flex-1 justify-between bg-surface-container-lowest">
         <div>
           <div class="flex items-center justify-between mb-1">
-            <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Naru Bracelet</span>
+            <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Naru Bangle</span>
             <span class="font-label-caps text-[10px] text-outline uppercase">AED 2,850</span>
           </div>
           <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-2">Adjustable bolo, embossed with Akkadian inscriptions of courage.</p>
@@ -218,11 +227,14 @@
     </div>
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Samara arch lapis earrings on model" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/samara-arch.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="../product/samara-arch-earrings/" aria-label="Arch Drop Earrings — view the piece">
+<img alt="Samara arch lapis earrings on model" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/samara-arch.jpg">
+</a>
+        <button data-wish-heart="samara-arch-earrings" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="samara-arch-earrings" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -238,11 +250,14 @@
     </div>
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Dijla hoops — lapis and gold" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/dijla-hoops-tile.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="../product/dijla-hoops/" aria-label="Flowing Waters Hoops — view the piece">
+<img alt="Dijla hoops — lapis and gold" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/dijla-hoops-tile.jpg">
+</a>
+        <button data-wish-heart="dijla-hoops" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="dijla-hoops" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -258,11 +273,14 @@
     </div>
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Utu solar coin ring — solid gold" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/utu-signet-tile.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="../product/utu-solar-coin/" aria-label="Solar Coin — view the piece">
+<img alt="Utu solar coin ring — solid gold" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/utu-signet-tile.jpg">
+</a>
+        <button data-wish-heart="utu-solar-coin" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="utu-solar-coin" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -278,11 +296,14 @@
     </div>
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Inanna star coin pendant" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/star-pendant-tile.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="../product/inanna-star-coin/" aria-label="Star Coin Pendant — view the piece">
+<img alt="Inanna star coin pendant" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/star-pendant-tile.jpg">
+</a>
+        <button data-wish-heart="inanna-star-coin" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="inanna-star-coin" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -298,11 +319,14 @@
     </div>
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-surface-container-low flex items-center justify-center">
-        <img alt="Layering strands necklace — lapis and gold" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/layering-tile.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="../product/layering-strands/" aria-label="Layering Strands — view the piece">
+<img alt="Layering strands necklace — lapis and gold" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="../assets/images/products/layering-tile.jpg">
+</a>
+        <button data-wish-heart="layering-strands" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="layering-strands" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -450,5 +474,9 @@
 </footer>
 
 <script src="../assets/js/main.js?v=20261026b" defer></script>
+
+<script src="../assets/js/catalog.js?v=20261105" defer></script>
+
+<script src="../assets/js/commerce.js?v=20261105" defer></script>
 </body>
 </html>

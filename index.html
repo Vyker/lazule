@@ -136,14 +136,14 @@
               Wishlist
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">0 Saved</span>
-          </a>
+           <span data-lazule-wish-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="bag/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">shopping_bag</span>
               Shopping Bag
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2 Items</span>
-          </a>
+           <span data-lazule-bag-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="account/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">person</span>
@@ -207,11 +207,14 @@
     <!-- Product Card 1: Ki Pendant -->
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="The Origin Necklace — solid 18K gold dagger pendant on a fine chain" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/dagger-necklace.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="product/origin-necklace/" aria-label="The Origin Necklace — view the piece">
+<img alt="The Origin Necklace — solid 18K gold dagger pendant on a fine chain" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/dagger-necklace.jpg">
+</a>
+        <button data-wish-heart="origin-necklace" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="origin-necklace" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -226,14 +229,17 @@
     <!-- Product Card 2: Ishtar Stack -->
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="Puabi Ring — interlaced 18K gold set with black onyx" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/onyx-weave-ring.jpg">
+        
+<a class="block" href="product/puabi-ring/" aria-label="Puabi Ring — view the piece">
+<img alt="Puabi Ring — interlaced 18K gold set with black onyx" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/onyx-weave-ring.jpg">
+</a>
         <div class="absolute top-3 left-3 bg-secondary text-surface px-2 py-0.5 font-label-caps text-[9px] tracking-widest uppercase">
           Iconic
         </div>
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        <button data-wish-heart="puabi-ring" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="puabi-ring" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -248,14 +254,17 @@
     <!-- Product Card 3: Naru Bangle -->
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="Naru Cuneiform Adjustable Gold Bangle" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/cuneiform-band.jpg">
+        
+<a class="block" href="product/naru-bracelet/" aria-label="Naru Bangle — view the piece">
+<img alt="Naru Cuneiform Adjustable Gold Bangle" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/cuneiform-band.jpg">
+</a>
         <div class="absolute top-3 left-3 bg-primary-container text-surface px-2 py-0.5 font-label-caps text-[9px] tracking-widest uppercase">
           Bestseller
         </div>
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        <button data-wish-heart="naru-bracelet" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="naru-bracelet" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -270,11 +279,14 @@
     <!-- Product Card 4: Samara Arch Earrings -->
     <div class="group relative flex flex-col bg-surface-container-lowest transition-all duration-300">
       <div class="relative w-full aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="Lira Earrings — 18K gold chain ear cuffs with lapis baguettes" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/lapis-earcuffs.jpg">
-        <button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
+        
+<a class="block" href="product/lira-earrings/" aria-label="Lira Earrings — view the piece">
+<img alt="Lira Earrings — 18K gold chain ear cuffs with lapis baguettes" class="w-full h-full object-contain object-center p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="assets/images/products/lapis-earcuffs.jpg">
+</a>
+        <button data-wish-heart="lira-earrings" aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm text-on-surface-variant hover:text-error hover:bg-surface flex items-center justify-center transition-colors" type="button">
           <span class="material-symbols-outlined text-[18px]">favorite</span>
         </button>
-        <div class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
+        <div data-slug="lira-earrings" class="quick-add absolute bottom-0 inset-x-0 bg-primary/95 text-on-primary py-3 text-center font-label-caps text-label-caps tracking-[0.25em] uppercase opacity-0 group-hover:opacity-100 max-lg:opacity-100 transition-opacity duration-300 cursor-pointer hover:bg-primary">
           Quick Add to Bag
         </div>
       </div>
@@ -311,7 +323,10 @@
 <div class="grid grid-cols-3 gap-space-sm">
         <div class="bg-surface-container-lowest">
           <div class="aspect-[4/5] bg-white flex items-center justify-center overflow-hidden">
-            <img alt="Puabi Ring — interlaced 18K gold with black onyx" class="w-full h-full object-contain object-center p-3" src="assets/images/puabi-ring.jpg" loading="lazy">
+            
+<a class="block" href="product/puabi-ring/" aria-label="Puabi Ring — view the piece">
+<img alt="Puabi Ring — interlaced 18K gold with black onyx" class="w-full h-full object-contain object-center p-3" src="assets/images/puabi-ring.jpg" loading="lazy">
+</a>
           </div>
           <div class="p-2 text-center">
             <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Puabi Ring</span>
@@ -319,7 +334,10 @@
         </div>
         <div class="bg-surface-container-lowest">
           <div class="aspect-[4/5] bg-white flex items-center justify-center overflow-hidden">
-            <img alt="Puabi Ear Cuff — spiralling 18K gold and onyx" class="w-full h-full object-contain object-center p-3" src="assets/images/puabi-earcuff.jpg" loading="lazy">
+            
+<a class="block" href="product/puabi-ear-cuff/" aria-label="Puabi Ear Cuff — view the piece">
+<img alt="Puabi Ear Cuff — spiralling 18K gold and onyx" class="w-full h-full object-contain object-center p-3" src="assets/images/puabi-earcuff.jpg" loading="lazy">
+</a>
           </div>
           <div class="p-2 text-center">
             <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Puabi Ear Cuff</span>
@@ -327,7 +345,10 @@
         </div>
         <div class="bg-surface-container-lowest">
           <div class="aspect-[4/5] bg-white flex items-center justify-center overflow-hidden">
-            <img alt="Puabi Pendant — woven 18K gold and onyx pendant on a fine chain" class="w-full h-full object-contain object-center p-3" src="assets/images/puabi-pendant.jpg" loading="lazy">
+            
+<a class="block" href="product/puabi-pendant/" aria-label="Puabi Pendant — view the piece">
+<img alt="Puabi Pendant — woven 18K gold and onyx pendant on a fine chain" class="w-full h-full object-contain object-center p-3" src="assets/images/puabi-pendant.jpg" loading="lazy">
+</a>
           </div>
           <div class="p-2 text-center">
             <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Puabi Pendant</span>
@@ -350,7 +371,10 @@
       <div class="grid grid-cols-3 gap-space-sm">
         <div class="bg-surface-container-lowest">
           <div class="aspect-[4/5] bg-white flex items-center justify-center overflow-hidden">
-            <img alt="Origin Earrings — 18K gold star studs" class="w-full h-full object-contain object-center p-3" src="assets/images/origin-earrings.jpg" loading="lazy">
+            
+<a class="block" href="product/origin-earrings/" aria-label="Origin Earrings — view the piece">
+<img alt="Origin Earrings — 18K gold star studs" class="w-full h-full object-contain object-center p-3" src="assets/images/origin-earrings.jpg" loading="lazy">
+</a>
           </div>
           <div class="p-2 text-center">
             <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Origin Earrings</span>
@@ -358,7 +382,10 @@
         </div>
         <div class="bg-surface-container-lowest">
           <div class="aspect-[4/5] bg-white flex items-center justify-center overflow-hidden">
-            <img alt="Origin Necklace — 18K gold dagger bar pendant on a fine chain" class="w-full h-full object-contain object-center p-3" src="assets/images/origin-necklace.jpg" loading="lazy">
+            
+<a class="block" href="product/origin-necklace/" aria-label="Origin Necklace — view the piece">
+<img alt="Origin Necklace — 18K gold dagger bar pendant on a fine chain" class="w-full h-full object-contain object-center p-3" src="assets/images/origin-necklace.jpg" loading="lazy">
+</a>
           </div>
           <div class="p-2 text-center">
             <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Origin Necklace</span>
@@ -366,7 +393,10 @@
         </div>
         <div class="bg-surface-container-lowest">
           <div class="aspect-[4/5] bg-white flex items-center justify-center overflow-hidden">
-            <img alt="Origin Ring — 18K gold star ring" class="w-full h-full object-contain object-center p-3" src="assets/images/origin-ring.jpg" loading="lazy">
+            
+<a class="block" href="product/origin-ring/" aria-label="Origin Ring — view the piece">
+<img alt="Origin Ring — 18K gold star ring" class="w-full h-full object-contain object-center p-3" src="assets/images/origin-ring.jpg" loading="lazy">
+</a>
           </div>
           <div class="p-2 text-center">
             <span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase">Origin Ring</span>
@@ -423,7 +453,10 @@
     <!-- Item 1: Ishtar Stack Ring -->
     <div class="group bg-surface-container-lowest flex flex-col">
       <div class="relative aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="Archive piece — 18K gold chain earrings with lapis lazuli" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-05.jpg">
+        
+<a class="block" href="product/lapis-chain-earrings/" aria-label="Lapis Chain Earrings — view the piece">
+<img alt="Archive piece — 18K gold chain earrings with lapis lazuli" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-05.jpg">
+</a>
         <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
           <span class="material-symbols-outlined text-[20px]">favorite</span>
         </button>
@@ -432,7 +465,10 @@
     <!-- Item 2: Dijla Hoops -->
     <div class="group bg-surface-container-lowest flex flex-col">
       <div class="relative aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="Archive piece — 18K gold cuneiform inscription bangle" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-02.jpg">
+        
+<a class="block" href="product/naru-bracelet/" aria-label="Naru Bangle — view the piece">
+<img alt="Archive piece — 18K gold cuneiform inscription bangle" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-02.jpg">
+</a>
         <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
           <span class="material-symbols-outlined text-[20px]">favorite</span>
         </button>
@@ -441,7 +477,10 @@
     <!-- Item 3: Star Medallion Pendant -->
     <div class="group bg-surface-container-lowest flex flex-col">
       <div class="relative aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="Archive piece — 18K gold and lapis lazuli link bracelet" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-03.jpg">
+        
+<a class="block" href="product/lapis-link-bracelet/" aria-label="Lapis Link Bracelet — view the piece">
+<img alt="Archive piece — 18K gold and lapis lazuli link bracelet" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-03.jpg">
+</a>
         <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
           <span class="material-symbols-outlined text-[20px]">favorite</span>
         </button>
@@ -450,7 +489,10 @@
     <!-- Item 4: Babylon Arch Lapis Pendant -->
     <div class="group bg-surface-container-lowest flex flex-col">
       <div class="relative aspect-square overflow-hidden bg-white flex items-center justify-center">
-        <img alt="Archive piece — 18K gold crescent ring with lapis lazuli" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-04.jpg">
+        
+<a class="block" href="product/crescent-ring/" aria-label="Crescent Ring — view the piece">
+<img alt="Archive piece — 18K gold crescent ring with lapis lazuli" class="w-full h-full object-contain object-center p-4" src="assets/images/archive-04.jpg">
+</a>
         <button aria-label="Wishlist" class="absolute top-3 right-3 text-on-surface-variant hover:text-error transition-colors" type="button">
           <span class="material-symbols-outlined text-[20px]">favorite</span>
         </button>
@@ -596,5 +638,9 @@
 </footer>
 
 <script src="assets/js/main.js?v=20261026b" defer></script>
+
+<script src="assets/js/catalog.js?v=20261105" defer></script>
+
+<script src="assets/js/commerce.js?v=20261105" defer></script>
 </body>
 </html>

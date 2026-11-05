@@ -90,14 +90,14 @@
               Wishlist
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">0 Saved</span>
-          </a>
+           <span data-lazule-wish-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="../bag/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">shopping_bag</span>
               Shopping Bag
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2 Items</span>
-          </a>
+           <span data-lazule-bag-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="../account/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">person</span>
@@ -133,9 +133,9 @@
     <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary block mb-2">The Bag</span>
     <h1 class="font-headline-xl text-headline-xl text-primary uppercase">Shopping Bag</h1>
     <p class="font-body-md text-body-md text-on-surface-variant mt-2">Your pieces, gathered — ready to be inscribed for the concierge.</p>
-    <p class="mt-2 font-label-caps text-[10px] tracking-[0.25em] uppercase text-outline">0 articles in the bag</p>
+    <p id="lazule-bag-count" class="mt-2 font-label-caps text-[10px] tracking-[0.25em] uppercase text-outline">0 articles in the bag</p>
   </div>
-  <div class="max-w-xl mx-auto mt-space-lg bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl text-center">
+  <div id="lazule-bag-empty" class="max-w-xl mx-auto mt-space-lg bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl text-center">
     <span class="material-symbols-outlined text-[48px] text-secondary">shopping_bag</span>
     <h2 class="font-headline-md text-headline-md text-primary uppercase mt-space-xs">Your bag is empty</h2>
     <p class="font-body-md text-body-md text-on-surface-variant mt-2">Until the boutique opens, every piece is prepared by hand. Tell the concierge what you keep, and we will write it into the register.</p>
@@ -144,16 +144,18 @@
       <a class="inline-flex items-center gap-2 border border-primary text-primary px-8 py-3.5 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary hover:text-on-primary transition-colors" href="tel:+971****0090"><span>Call the Concierge</span></a>
     </div>
   </div>
-  <div class="max-w-xl mx-auto mt-space-sm bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl">
+  <div id="lazule-bag-list" class="max-w-xl mx-auto mt-space-lg bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl text-left"></div>
+<div class="max-w-xl mx-auto mt-space-sm bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl">
     <h2 class="font-headline-sm text-headline-sm text-primary uppercase">Order Preview</h2>
     <div class="mt-space-md flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
       <div class="flex items-center justify-between"><span>Articles</span><span>—</span></div>
-      <div class="flex items-center justify-between"><span>Subtotal</span><span>AED —</span></div>
+      <div class="flex items-center justify-between"><span>Subtotal</span><span id="lazule-bag-subtotal">AED —</span></div>
       <div class="flex items-center justify-between"><span>Delivery</span><span class="text-secondary">Complimentary</span></div>
       <div class="flex items-center justify-between"><span>Archival insurance</span><span class="text-secondary">Included</span></div>
-      <div class="flex items-center justify-between border-t border-surface-container-highest pt-space-xs mt-space-xs font-headline-sm text-headline-sm text-primary"><span>Total</span><span>AED —</span></div>
+      <div class="flex items-center justify-between border-t border-surface-container-highest pt-space-xs mt-space-xs font-headline-sm text-headline-sm text-primary"><span>Total</span><span id="lazule-bag-total">AED —</span></div>
     </div>
-    <p class="mt-space-sm font-label-caps text-[10px] tracking-widest uppercase text-outline">Design preview — checkout opens with the boutique</p>
+    <a id="lazule-bag-checkout" class="mt-space-md inline-flex items-center justify-center gap-2 bg-primary text-on-primary w-full px-8 py-3.5 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary-container transition-colors" href="#contact" style="display:none"><span>Proceed to Checkout</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+    <p class="mt-space-sm font-label-caps text-[10px] tracking-widest uppercase text-outline">Checkouts are handled personally by the concierge</p>
   </div>
 </section>
 </main>
@@ -248,5 +250,9 @@
 </footer>
 
 <script src="../assets/js/main.js?v=20261026b" defer></script>
+
+<script src="../assets/js/catalog.js?v=20261105" defer></script>
+
+<script src="../assets/js/commerce.js?v=20261105" defer></script>
 </body>
 </html>

@@ -90,14 +90,14 @@
               Wishlist
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">0 Saved</span>
-          </a>
+           <span data-lazule-wish-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="../bag/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">shopping_bag</span>
               Shopping Bag
             </span>
             <span class="font-label-caps text-[10px] tracking-[0.2em] text-outline group-hover:text-secondary transition-colors uppercase">2 Items</span>
-          </a>
+           <span data-lazule-bag-count class="min-w-[1.25rem] h-[1.25rem] px-1.5 items-center justify-center rounded-full bg-primary text-on-primary text-[9px] font-semibold" style="display:none">0</span></a>
           <a href="../account/" class="group flex items-center justify-between py-1.5 sm:py-2 border-b border-surface-container-highest/40 hover:border-secondary transition-colors w-full text-left">
             <span class="flex items-center gap-space-sm font-headline-md text-headline-md max-sm:text-[18px] text-primary uppercase group-hover:text-secondary transition-colors">
               <span class="material-symbols-outlined text-[26px]">person</span>
@@ -133,9 +133,9 @@
     <span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-secondary block mb-2">The Private Vault</span>
     <h1 class="font-headline-xl text-headline-xl text-primary uppercase">My Wishlist</h1>
     <p class="font-body-md text-body-md text-on-surface-variant mt-2">The pieces you keep, numbered and waiting — your private shortlist before you say yes.</p>
-    <p class="mt-2 font-label-caps text-[10px] tracking-[0.25em] uppercase text-outline">0 pieces inscribed so far</p>
+    <p id="lazule-wish-count" class="mt-2 font-label-caps text-[10px] tracking-[0.25em] uppercase text-outline">0 pieces inscribed so far</p>
   </div>
-  <div class="max-w-xl mx-auto mt-space-lg bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl text-center">
+  <div id="lazule-wish-empty" class="max-w-xl mx-auto mt-space-lg bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl text-center">
     <span class="material-symbols-outlined text-[48px] text-secondary">favorite</span>
     <h2 class="font-headline-md text-headline-md text-primary uppercase mt-space-xs">The vault is waiting</h2>
     <p class="font-body-md text-body-md text-on-surface-variant mt-2">Save a piece from the archive and it will be kept here — numbered, ready to reserve the moment the boutique opens.</p>
@@ -145,7 +145,9 @@
     </div>
   </div>
 </section>
-<section class="w-full pb-space-xl px-space-md lg:px-margin bg-surface">
+<div id="lazule-wish-list" class="max-w-xl mx-auto mt-space-lg bg-surface-container-lowest border border-surface-container-highest/60 p-space-lg sm:p-space-xl text-left"></div>
+</section>
+<section class="w-full pt-space-md pb-space-xl px-space-md lg:px-margin bg-surface">
   <div class="max-w-4xl mx-auto">
     <div class="text-center mb-space-lg">
       <span class="font-label-caps text-[10px] tracking-[0.3em] uppercase text-secondary block mb-1">Curated for the discerning</span>
@@ -154,7 +156,9 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
       <div class="bg-surface-container-lowest border border-surface-container-highest/40">
         <div class="w-full aspect-[4/5] overflow-hidden">
-          <img src="../assets/images/products/ki-pendant-tile.jpg" alt="Ki Pendant — 18K gold and lapis" class="w-full h-full object-cover" loading="lazy">
+          <a class="block" href="../product/ki-pendant/" aria-label="Ki Pendant — view the piece">
+<img src="../assets/images/products/ki-pendant-tile.jpg" alt="Ki Pendant — 18K gold and lapis" class="w-full h-full object-cover" loading="lazy">
+</a>
         </div>
         <div class="p-space-md flex items-start justify-between gap-2">
           <div>
@@ -166,7 +170,9 @@
       </div>
       <div class="bg-surface-container-lowest border border-surface-container-highest/40">
         <div class="w-full aspect-[4/5] overflow-hidden">
-          <img src="../assets/images/products/ishtar-stack-tile.jpg" alt="Ishtar stack rings — 18K gold and lapis" class="w-full h-full object-cover" loading="lazy">
+          <a class="block" href="../product/ishtar-stack-rings/" aria-label="Ishtar Stack Rings — view the piece">
+<img src="../assets/images/products/ishtar-stack-tile.jpg" alt="Ishtar stack rings — 18K gold and lapis" class="w-full h-full object-cover" loading="lazy">
+</a>
         </div>
         <div class="p-space-md flex items-start justify-between gap-2">
           <div>
@@ -178,7 +184,9 @@
       </div>
       <div class="bg-surface-container-lowest border border-surface-container-highest/40">
         <div class="w-full aspect-[4/5] overflow-hidden">
-          <img src="../assets/images/samara-arch.jpg" alt="Samara arch lapis earrings" class="w-full h-full object-cover" loading="lazy">
+          <a class="block" href="../product/samara-arch-earrings/" aria-label="Arch Drop Earrings — view the piece">
+<img src="../assets/images/samara-arch.jpg" alt="Samara arch lapis earrings" class="w-full h-full object-cover" loading="lazy">
+</a>
         </div>
         <div class="p-space-md flex items-start justify-between gap-2">
           <div>
@@ -283,5 +291,9 @@
 </footer>
 
 <script src="../assets/js/main.js?v=20261026b" defer></script>
+
+<script src="../assets/js/catalog.js?v=20261105" defer></script>
+
+<script src="../assets/js/commerce.js?v=20261105" defer></script>
 </body>
 </html>
