@@ -60,14 +60,14 @@ window.LAZULE_CATALOG = {
   "price": 2950,
   "img": "assets/images/products/dagger-necklace.jpg",
   "collection": "Origin Collection",
-  "desc": "The first form of the Maison \u2014 a slender dagger bar of solid 18K gold suspended on a fine chain."
+  "desc": "The first form of LAZULE \u2014 a slender dagger bar of solid 18K gold suspended on a fine chain."
  },
  "origin-earrings": {
   "name": "Origin Earrings",
   "price": 2250,
   "img": "assets/images/origin-earrings.jpg",
   "collection": "Origin Collection",
-  "desc": "The star mark of the Maison, worn as a pair \u2014 bright, sharp and unapologetic."
+  "desc": "The star mark of LAZULE, worn as a pair \u2014 bright, sharp and unapologetic."
  },
  "origin-ring": {
   "name": "Origin Ring",
