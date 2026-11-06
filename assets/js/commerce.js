@@ -105,11 +105,12 @@
     refresh();
   }
   function flash(el, txt) {
-    if (!el || !el.textContent) return;
-    if (el._orig === undefined) el._orig = el.textContent;
-    el.textContent = txt;
-    clearTimeout(el._h);
-    el._h = setTimeout(function () { el.textContent = el._orig; }, 1200);
+    if (!el) return;
+    var node = (el.querySelector && el.querySelector("[data-btnlabel]")) || el;
+    if (node._orig === undefined) node._orig = node.textContent;
+    node.textContent = txt;
+    clearTimeout(node._h);
+    node._h = setTimeout(function () { node.textContent = node._orig; }, 1200);
   }
 
   /* ---------- rendering ---------- */
@@ -218,9 +219,9 @@
       var t = ev.target;
       if (!t || !t.closest) return;
       var bagBtn = t.closest("[data-add-bag]");
-      if (bagBtn) { ev.preventDefault(); addToBag(bagBtn.getAttribute("data-add-bag"), 1); var it = item(bagBtn.getAttribute("data-add-bag")); toast(it ? "Added to bag — " + it.name : "Added to bag"); flash(bagBtn, "Added to Bag ✓"); return; }
+      if (bagBtn) { ev.preventDefault(); addToBag(bagBtn.getAttribute("data-add-bag"), 1); var it = item(bagBtn.getAttribute("data-add-bag")); toast(it ? "Added to bag — " + it.name : "Added to bag"); flash(bagBtn, "Added to Bag"); return; }
       var quick = t.closest(".quick-add[data-slug]");
-      if (quick) { ev.preventDefault(); addToBag(quick.getAttribute("data-slug"), 1); var i2 = item(quick.getAttribute("data-slug")); toast(i2 ? "Added to bag — " + i2.name : "Added to bag"); flash(quick, "Added to Bag ✓"); return; }
+      if (quick) { ev.preventDefault(); addToBag(quick.getAttribute("data-slug"), 1); var i2 = item(quick.getAttribute("data-slug")); toast(i2 ? "Added to bag — " + i2.name : "Added to bag"); flash(quick, "Added to Bag"); return; }
       var wishBtn = t.closest("[data-wish-btn], [data-wish-heart]");
       if (wishBtn) {
         ev.preventDefault();

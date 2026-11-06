@@ -34,8 +34,15 @@
         <img src="../../assets/images/lazule-logo.png" alt="LAZULE — Jewellery with a Story" class="h-12 md:h-14 lg:h-16 object-contain mix-blend-multiply">
       </a>
     </div>
-    <div class="flex items-center flex-1" aria-hidden="true">
-      <span class="w-[38px]"></span>
+    <div class="flex items-center gap-space-lg flex-1 justify-end pr-space-md">
+      <a href="../../wishlist/" class="relative inline-flex items-center justify-center text-primary hover:text-secondary transition-colors p-1" aria-label="Wishlist — saved pieces">
+        <span class="material-symbols-outlined text-[24px]">favorite</span>
+        <span data-lazule-wish-count class="absolute -top-1 -right-1 min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary text-[9px] font-label-caps tracking-[0.1em] flex items-center justify-center leading-none hidden">0</span>
+      </a>
+      <a href="../../bag/" class="relative inline-flex items-center justify-center text-primary hover:text-secondary transition-colors p-1" aria-label="Shopping bag">
+        <span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+        <span data-lazule-bag-count class="absolute -top-1 -right-1 min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary text-[9px] font-label-caps tracking-[0.1em] flex items-center justify-center leading-none hidden">0</span>
+      </a>
     </div>
   </div>
 
@@ -147,13 +154,13 @@
         <div class="font-label-price text-label-price text-primary">AED 2,400</div>
         <p class="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed">Quad-stack of cuneiform bands, baguette lapis and micro pavé.</p>
         <div class="pt-2 flex flex-col sm:flex-row gap-space-sm">
-          <button data-add-bag="ishtar-stack-rings" class="inline-flex items-center justify-center gap-2 font-label-caps text-label-caps tracking-[0.25em] uppercase text-primary border-b border-primary/30 hover:border-primary hover:text-secondary transition-colors" type="button">
-            <span>Add to Bag</span>
+          <button data-add-bag="ishtar-stack-rings" class="inline-flex items-center justify-center gap-2 border border-primary text-primary px-8 py-3.5 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary hover:text-on-primary transition-colors" type="button">
             <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+            <span data-btnlabel>Add to Bag</span>
           </button>
           <button data-wish-btn="ishtar-stack-rings" class="inline-flex items-center justify-center gap-2 border border-primary text-primary px-8 py-3.5 font-label-caps text-label-caps tracking-[0.25em] uppercase hover:bg-primary hover:text-on-primary transition-colors" type="button">
             <span class="material-symbols-outlined text-[18px]" data-wish-ico>favorite_border</span>
-            <span data-wish-label>Add to Wishlist</span>
+            <span data-wish-label data-btnlabel>Add to Wishlist</span>
           </button>
         </div>
         <div class="pt-2 grid grid-cols-2 gap-space-md font-body-sm text-body-sm text-on-surface-variant">
