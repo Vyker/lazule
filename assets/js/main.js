@@ -54,7 +54,7 @@
       if (el.dataset.busy) return;
       el.dataset.busy = "1";
       var prevText = el.textContent;
-      el.textContent = "ADDED TO BAG ✦";
+      el.textContent = "ADDED TO BAG";
       el.classList.add("bg-secondary");
       setTimeout(function () {
         el.textContent = prevText;
