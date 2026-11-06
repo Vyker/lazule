@@ -90,3 +90,22 @@
     "GRAD" 0,
     "opsz" 24;
 }
+
+/* ── LAZULE finishing touches ─────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #002452;
+  color: #fbf9f6;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #002452;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
