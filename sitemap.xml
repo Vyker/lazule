@@ -73,4 +73,19 @@
 <url>
   <loc>https://vyker.github.io/lazule/legal/conditions-of-sale/</loc>
 </url>
+  <url>
+    <loc>https://vyker.github.io/lazule/contact/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://vyker.github.io/lazule/faq/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://vyker.github.io/lazule/sitemap/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
 </urlset>
