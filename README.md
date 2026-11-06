@@ -1,4 +1,4 @@
-# LAZULE — Maison de Haute Joaillerie
+# LAZULE — Heritage Jewellery
 
 Static marketing site for **LAZULE**, a Mesopotamian-inspired fine jewellery maison (design built in Google AI Studio, re-homed into a clean, editable HTML/CSS/JS project).
 
